@@ -24,6 +24,14 @@ public class Helper {
         return productList;
     }
 
+    /**
+     * Compare two Product lists and write out the differences
+     * It compares the first list to the second list
+     * Also points out Products missing from the second list
+     * @param firstList - The first Product list
+     * @param secondList - The second Product list
+     * @return returns a list of String with the differences if there is any
+     */
     public List<String> compareTwoLists(List<Product> firstList, List<Product> secondList) {
         for (int i = 0; i < firstList.size(); i++) {
             Product productFromFirstList = firstList.get(i);
